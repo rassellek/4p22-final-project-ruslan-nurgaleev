@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/4p22-final-project-ruslan-nurgaleev/static/css/main.073c9b0a.css",
+    "main.js": "/4p22-final-project-ruslan-nurgaleev/static/js/main.c960e465.js",
+    "static/js/787.1ec7e820.chunk.js": "/4p22-final-project-ruslan-nurgaleev/static/js/787.1ec7e820.chunk.js",
+    "static/media/logo.svg": "/4p22-final-project-ruslan-nurgaleev/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/4p22-final-project-ruslan-nurgaleev/index.html",
+    "main.073c9b0a.css.map": "/4p22-final-project-ruslan-nurgaleev/static/css/main.073c9b0a.css.map",
+    "main.c960e465.js.map": "/4p22-final-project-ruslan-nurgaleev/static/js/main.c960e465.js.map",
+    "787.1ec7e820.chunk.js.map": "/4p22-final-project-ruslan-nurgaleev/static/js/787.1ec7e820.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.c960e465.js"
+  ]
+}
