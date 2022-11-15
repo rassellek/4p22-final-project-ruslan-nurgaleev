@@ -3,9 +3,9 @@ import './MyComponent.css';
 function MyComponent() {
     return (
         <div>
-            <span>Hello,</span>
-            <span>functional</span>
-            <span>component</span>
+            <span>Hello, </span>
+            <span>functional </span>
+            <span>component </span>
         </div>
     )
 }
