@@ -1,0 +1,129 @@
+@import '../../assets/styles/variables.scss';
+@import '../../assets/fonts/fonts.scss';
+
+@media screen and (min-width: 769px) {
+  .root {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    cursor: default;
+  }
+
+  .section-header-info {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: calc(44 * $ratio-big);
+    background-color: $color-black;
+    color: $color-header-info;
+    caret-color: transparent;
+  }
+
+  .section-header-info__title {
+    margin-left: calc(15 * $ratio-big);
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: calc(12 * $ratio-big);
+    line-height: calc(16 * $ratio-big);
+  }
+
+  .section-header-info-link {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: calc(50 * $ratio-big);
+  }
+
+  .section-header-info-link__entry {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: calc(12 * $ratio-big);
+    line-height: calc(16 * $ratio-big);
+  }
+
+  .section-header-info-link__registration {
+    margin-left: calc(15 * $ratio-big);
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: calc(12 * $ratio-big);
+    line-height: calc(16 * $ratio-big);
+  }
+
+  .section-header-info-icon__phone {
+    width: calc(25 * $ratio-big);
+    margin-left: calc(25 * $ratio-big);
+  }
+
+  .section-header-info-icon__entry {
+    width: calc(25 * $ratio-big);
+  }
+
+  .section-header-info-link__entry:hover {
+    color: $color-white;
+  }
+
+  .section-header-info-link__registration:hover {
+    color: $color-white;
+  }
+
+  .section-header-navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: calc(80 * $ratio-big);
+    background-color: $color-header-navbar;
+    color: $color-white;
+    caret-color: transparent;
+  }
+
+  .section-header-navbar__logo {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    font-family: 'Post No Bills Jaffna';
+    font-weight: 700;
+    font-size: calc(36 * $ratio-big);
+    line-height: calc(54 * $ratio-big);
+  }
+
+  .section-header-navbar-panel {
+    display: flex;
+    justify-content: right;
+    width: 80%;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: calc(14 * $ratio-big);
+    line-height: calc(18 * $ratio-big);
+    color: $color-header-info;
+  }
+
+  .section-header-navbar-panel__container path {
+    fill: var(--myColor1);
+  }
+
+  .section-header-navbar-panel__container-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: calc(80 * $ratio-big);
+    --myColor1: #969696;
+  }
+
+  .section-header-navbar-panel__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    height: calc(80 * $ratio-big);
+    --myColor1: #969696;
+  }
+
+  .section-header-navbar-panel__container:hover {
+    background-color: $color-header-navbar-hover;
+    color: $color-white;
+    --myColor1: #ffffff;
+  }
+}

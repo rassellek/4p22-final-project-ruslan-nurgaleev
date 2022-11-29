@@ -1,0 +1,37 @@
+@import '../../../../../../assets/styles/variables.scss';
+@import '../../../../../../assets/fonts/fonts.scss';
+
+.root {
+  font-family: 'Playfair Display';
+  font-weight: 400;
+  font-size: calc(18 * $ratio-big);
+  line-height: calc(21 * $ratio-big);
+  cursor: pointer;
+
+  .containerImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(260 * $ratio-big);
+    height: calc(325 * $ratio-big);
+    background-color: $color-productItem-image;
+    margin-bottom: calc(25 * $ratio-big);
+  }
+
+  .image {
+    width: calc(215 * $ratio-big);
+    height: calc(215 * $ratio-big);
+  }
+
+  .title {
+    width: calc(260 * $ratio-big);
+    margin-bottom: calc(25 * $ratio-big);
+  }
+
+  .prise {
+    width: calc(260 * $ratio-big);
+  }
+
+  .description {
+  }
+}

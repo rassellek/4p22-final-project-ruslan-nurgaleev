@@ -1,0 +1,30 @@
+@import '../../assets/styles/variables';
+@import '../../assets/fonts/fonts.scss';
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+.root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  caret-color: transparent;
+  font-family: 'Bungee Spice', cursive;
+  background-color: $color-white;
+}
+.title {
+  font-size: calc(60 * $ratio-big);
+  font-weight: 400;
+  margin-bottom: calc(20 * $ratio-big);
+}
+.subtitle {
+  font-size: calc(40 * $ratio-big);
+  margin-bottom: calc(20 * $ratio-big);
+}
+.logo {
+  height: calc(400 * $ratio-big);
+  margin-bottom: calc(20 * $ratio-big);
+}
+.home {
+  font-size: calc(40 * $ratio-big);
+}
