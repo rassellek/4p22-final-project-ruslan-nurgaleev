@@ -166,7 +166,7 @@
     width: 100%;
     min-height: calc(100vh - calc(44 * $ratio-big));
   }
-  
+
   .footer {
     display: flex;
     align-items: center;
@@ -341,14 +341,15 @@
 
   .body {
     width: 100%;
-    min-height: calc(100vh - calc(44 * $ratio-big));
+    min-height: calc(100vh - calc(44 * $ratio-small));
   }
 
   .footer {
     display: flex;
     align-items: center;
     width: 100%;
-    height: calc(44 * $ratio-big);
+    font-size: calc(8 * $ratio-small);
+    height: calc(44 * $ratio-small);
     background-color: $color-black;
     color: $color-header-info;
     caret-color: transparent;
