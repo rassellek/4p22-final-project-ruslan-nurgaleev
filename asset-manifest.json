@@ -1,28 +1,36 @@
 {
   "files": {
-    "main.css": "/4p22-final-project-ruslan-nurgaleev/static/css/main.b182f76a.css",
-    "main.js": "/4p22-final-project-ruslan-nurgaleev/static/js/main.6430d4cf.js",
+    "main.css": "/4p22-final-project-ruslan-nurgaleev/static/css/main.f4a4a47d.css",
+    "main.js": "/4p22-final-project-ruslan-nurgaleev/static/js/main.081c8d02.js",
     "static/media/Page404.png": "/4p22-final-project-ruslan-nurgaleev/static/media/Page404.0d2f55e26d2e7794ac63.png",
     "static/media/Main_1.png": "/4p22-final-project-ruslan-nurgaleev/static/media/Main_1.3a7d5adee0a326090894.png",
     "static/media/BungeeSpice-Regular.ttf": "/4p22-final-project-ruslan-nurgaleev/static/media/BungeeSpice-Regular.eddfbab9ae86f463b66c.ttf",
     "static/media/PTSans-Regular.ttf": "/4p22-final-project-ruslan-nurgaleev/static/media/PTSans-Regular.77e92507394e2309d837.ttf",
     "static/media/PlayfairDisplay-Italic-VariableFont_wght.ttf": "/4p22-final-project-ruslan-nurgaleev/static/media/PlayfairDisplay-Italic-VariableFont_wght.8a3a30667c7d75e00588.ttf",
     "static/media/PostNoBillsJaffna-Bold.ttf": "/4p22-final-project-ruslan-nurgaleev/static/media/PostNoBillsJaffna-Bold.c2b6c26b6aec49110f75.ttf",
+    "static/media/Comfortaa-Regular.ttf": "/4p22-final-project-ruslan-nurgaleev/static/media/Comfortaa-Regular.051d690872878482e7e7.ttf",
+    "static/media/Comfortaa-Bold.ttf": "/4p22-final-project-ruslan-nurgaleev/static/media/Comfortaa-Bold.059cc3e0c5d00a88354f.ttf",
     "static/media/Sun.svg": "/4p22-final-project-ruslan-nurgaleev/static/media/Sun.1912422632102deed281e5bf5f882a4d.svg",
+    "static/media/Buy.svg": "/4p22-final-project-ruslan-nurgaleev/static/media/Buy.dcbc4bb94ac346285729caafaa8b58f4.svg",
     "static/media/Category.svg": "/4p22-final-project-ruslan-nurgaleev/static/media/Category.f42f935ed3eae3c0cc3134c6a04e45b0.svg",
+    "static/media/Delete.svg": "/4p22-final-project-ruslan-nurgaleev/static/media/Delete.d2ec1c9cb7dc3e09710d1cc237780274.svg",
     "static/media/Phone.svg": "/4p22-final-project-ruslan-nurgaleev/static/media/Phone.1fe54ad7dbf1687201c95ba6129b9071.svg",
-    "static/media/Cart.svg": "/4p22-final-project-ruslan-nurgaleev/static/media/Cart.56ecd466430fdb85a914269b5bc4ab17.svg",
+    "static/media/House.svg": "/4p22-final-project-ruslan-nurgaleev/static/media/House.f68114fb5f9f2a9d5f7d7a41f9a50fe4.svg",
+    "static/media/Cart.svg": "/4p22-final-project-ruslan-nurgaleev/static/media/Cart.341be1f48e3389fc2ce4ee7d0320482a.svg",
     "static/media/Cross.svg": "/4p22-final-project-ruslan-nurgaleev/static/media/Cross.47ab42876247e6fb1b327ed44db66adf.svg",
     "static/media/Moon.svg": "/4p22-final-project-ruslan-nurgaleev/static/media/Moon.b69078727524b7311a097d3c57e9c5b6.svg",
+    "static/media/Dislike.svg": "/4p22-final-project-ruslan-nurgaleev/static/media/Dislike.3aab637015f9bfa12739f102acac792f.svg",
     "index.html": "/4p22-final-project-ruslan-nurgaleev/index.html",
     "static/media/Search.svg": "/4p22-final-project-ruslan-nurgaleev/static/media/Search.6773e3059bb5f9811142d8de442d5ab1.svg",
-    "static/media/Like.svg": "/4p22-final-project-ruslan-nurgaleev/static/media/Like.26711e115bc1ab117b84f251f9e29ba6.svg",
+    "static/media/MinusBlack.svg": "/4p22-final-project-ruslan-nurgaleev/static/media/MinusBlack.a3fcf6f1808e4fa4536a9c4d9e95b8ed.svg",
+    "static/media/PlusBlack.svg": "/4p22-final-project-ruslan-nurgaleev/static/media/PlusBlack.ab67289f2d977e205374fcd78eca9df4.svg",
+    "static/media/Like.svg": "/4p22-final-project-ruslan-nurgaleev/static/media/Like.1fdfe75c934ebc265852dd4800a5761b.svg",
     "static/media/Entry.svg": "/4p22-final-project-ruslan-nurgaleev/static/media/Entry.cf9c2a83db32d1ec5769a25da3c5e42f.svg",
-    "main.b182f76a.css.map": "/4p22-final-project-ruslan-nurgaleev/static/css/main.b182f76a.css.map",
-    "main.6430d4cf.js.map": "/4p22-final-project-ruslan-nurgaleev/static/js/main.6430d4cf.js.map"
+    "main.f4a4a47d.css.map": "/4p22-final-project-ruslan-nurgaleev/static/css/main.f4a4a47d.css.map",
+    "main.081c8d02.js.map": "/4p22-final-project-ruslan-nurgaleev/static/js/main.081c8d02.js.map"
   },
   "entrypoints": [
-    "static/css/main.b182f76a.css",
-    "static/js/main.6430d4cf.js"
+    "static/css/main.f4a4a47d.css",
+    "static/js/main.081c8d02.js"
   ]
 }
