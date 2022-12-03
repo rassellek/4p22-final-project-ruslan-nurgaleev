@@ -1,5 +1,498 @@
-.root {
+@import '../../../../assets/styles/variables.scss';
+@import '../../../../assets/fonts/fonts.scss';
+
+@media screen and (min-width: 769px) {
+  .root {
+    position: relative;
+    padding-top: calc(124 * $ratio-big);
+    width: 100%;
+    font-family: 'Comfortaa';
+    font-weight: 700;
+    line-height: calc(16 * $ratio-big);
+    caret-color: transparent;
+    cursor: default;
+
+    .navigate {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      margin: calc(25 * $ratio-big) calc(50 * $ratio-big);
+      width: 100%;
+
+      font-family: 'Comfortaa';
+      font-weight: 400;
+      font-size: calc(10 * $ratio-big);
+      line-height: calc(16 * $ratio-big);
+
+      .buttonNavigate {
+        border: none;
+        background: none;
+        --myColor1: #000000;
+        display: flex;
+        align-items: center;
+
+        .icon path {
+          fill: var(--myColor1);
+        }
+
+        .icon {
+          width: calc(25 * $ratio-big);
+          height: calc(25 * $ratio-big);
+        }
+      }
+
+      .buttonNavigate:active {
+        --myColor1: #969696;
+        color: $color-header-info;
+        text-decoration: underline;
+      }
+
+      .buttonNavigate:hover {
+        --myColor1: #969696;
+        color: $color-header-info;
+        text-decoration: underline;
+      }
+    }
+
+    .title {
+      width: 100%;
+      display: column;
+      align-items: center;
+      justify-content: left;
+      padding-left: calc(50 * $ratio-big);
+      font-size: calc(20 * $ratio-big);
+      line-height: calc(24 * $ratio-big);
+
+      .buttonNavigate {
+        border: none;
+        background: none;
+        font-size: calc(20 * $ratio-big);
+        line-height: calc(24 * $ratio-big);
+        padding-left: calc(50 * $ratio-big);
+      }
+      .buttonNavigate:active {
+        color: $color-header-info;
+        text-decoration: underline;
+      }
+
+      .buttonNavigate:hover {
+        color: $color-header-info;
+        text-decoration: underline;
+      }
+    }
+    .product {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin: calc(0 * $ratio-big) calc(50 * $ratio-big);
+      width: 100%;
+
+      font-family: 'Comfortaa';
+      line-height: calc(34 * $ratio-big);
+
+      .image {
+        width: 25%;
+        padding: calc(50 * $ratio-big);
+      }
+
+      .info {
+        width: 65%;
+        margin: calc(25 * $ratio-big);
+        padding: calc(25 * $ratio-big);
+        box-shadow: calc(0 * $ratio-big) calc(5 * $ratio-big) calc(45 * $ratio-big)
+          rgba(0, 0, 0, 0.25);
+
+        .id {
+          display: flex;
+          align-items: center;
+          margin: calc(50 * $ratio-big);
+          h2 {
+            font-weight: 700;
+            font-size: calc(24 * $ratio-big);
+            margin: calc(0 * $ratio-big);
+          }
+          h3 {
+            font-weight: 400;
+            font-size: calc(20 * $ratio-big);
+            color: $color-header-info;
+            margin: calc(0 * $ratio-big);
+          }
+        }
+
+        .description {
+          display: flex;
+          align-items: center;
+          margin: calc(50 * $ratio-big);
+          h2 {
+            font-weight: 700;
+            font-size: calc(24 * $ratio-big);
+            margin: calc(0 * $ratio-big);
+            h3 {
+              font-weight: 400;
+              font-size: calc(20 * $ratio-big);
+              color: $color-header-info;
+              margin: calc(0 * $ratio-big);
+            }
+          }
+        }
+        .price {
+          display: flex;
+          align-items: center;
+          margin: calc(50 * $ratio-big);
+          h2 {
+            font-weight: 700;
+            font-size: calc(24 * $ratio-big);
+
+            margin: calc(0 * $ratio-big);
+          }
+          h3 {
+            font-weight: 400;
+            font-size: calc(20 * $ratio-big);
+            color: $color-header-info;
+            margin: calc(0 * $ratio-big);
+          }
+        }
+
+        .containerButton {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: right;
+          height: calc(100 * $ratio-big);
+          margin: calc(50 * $ratio-big);
+
+          .buttonCart {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            border: none;
+            background: none;
+            border: 2px solid $color-header-info;
+            border-radius: 1%;
+            width: 25%;
+            height: calc(75 * $ratio-big);
+            color: $color-white;
+            padding: 0;
+            --myColor1: #ffffff;
+            background-color: $color-header-navbar-hover;
+          }
+
+          .cartIcon path {
+            fill: var(--myColor1);
+          }
+
+          .buttonCart:active {
+            border-color: $color-header-info;
+            color: $color-header-info;
+            background-color: $color-white;
+            --myColor1: #969696;
+          }
+          .buttonCart:hover {
+            border-color: $color-header-info;
+            color: $color-header-info;
+            background-color: $color-white;
+            --myColor1: #969696;
+          }
+
+          .cartIcon {
+            width: calc(25 * $ratio-big);
+            height: calc(25 * $ratio-big);
+          }
+
+          .buttonCounter {
+            border: none;
+            background: none;
+            border: none;
+            width: 10%;
+            padding: 0;
+            --myColor1: #000000;
+          }
+
+          .counterIcon path {
+            fill: var(--myColor1);
+          }
+
+          .buttonCounter:active {
+            --myColor1: #969696;
+          }
+          .buttonCounter:hover {
+            --myColor1: #969696;
+          }
+
+          .counterIcon {
+            width: calc(50 * $ratio-big);
+            height: calc(50 * $ratio-big);
+          }
+
+          .counter {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 10%;
+            font-size: calc(20 * $ratio-big);
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .root {
+      padding-top: calc(94 * $ratio-small);
+
+      .containerButton {
+        font-size: calc(8 * $ratio-small);
+        line-height: calc(8 * $ratio-small);
+      }
+    }
+  }
 }
-.image {
-  width: 300px;
+
+@media screen and (max-width: 768px) {
+  .root {
+    position: relative;
+    padding-top: calc(94 * $ratio-small);
+    width: 100%;
+    font-family: 'Comfortaa';
+    font-weight: 700;
+    line-height: calc(16 * $ratio-small);
+    caret-color: transparent;
+    cursor: default;
+
+    .navigate {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+      margin: calc(25 * $ratio-small) calc(25 * $ratio-small);
+      width: 90%;
+
+      font-family: 'Comfortaa';
+      font-weight: 400;
+      font-size: calc(10 * $ratio-small);
+      line-height: calc(16 * $ratio-small);
+
+      .buttonNavigate {
+        border: none;
+        background: none;
+        --myColor1: #000000;
+        display: flex;
+        align-items: center;
+
+        .icon path {
+          fill: var(--myColor1);
+        }
+
+        .icon {
+          width: calc(25 * $ratio-small);
+          height: calc(25 * $ratio-small);
+        }
+      }
+
+      .buttonNavigate:active {
+        --myColor1: #969696;
+        color: $color-header-info;
+        text-decoration: underline;
+      }
+
+      .buttonNavigate:hover {
+        --myColor1: #969696;
+        color: $color-header-info;
+        text-decoration: underline;
+      }
+    }
+
+    .title {
+      width: 90%;
+      display: column;
+      align-items: center;
+      justify-content: left;
+      padding-left: calc(50 * $ratio-small);
+      font-size: calc(20 * $ratio-small);
+      line-height: calc(24 * $ratio-small);
+
+      .buttonNavigate {
+        border: none;
+        background: none;
+        font-size: calc(20 * $ratio-small);
+        line-height: calc(24 * $ratio-small);
+        padding-left: calc(50 * $ratio-small);
+      }
+      .buttonNavigate:active {
+        color: $color-header-info;
+        text-decoration: underline;
+      }
+
+      .buttonNavigate:hover {
+        color: $color-header-info;
+        text-decoration: underline;
+      }
+    }
+
+    .product {
+      position: relative;
+      display: column;
+      align-items: center;
+      margin: calc(0 * $ratio-small) calc(50 * $ratio-small);
+      width: 90%;
+
+      font-family: 'Comfortaa';
+      line-height: calc(34 * $ratio-small);
+
+      .image {
+        width: 30%;
+        padding: calc(30 * $ratio-small);
+      }
+
+      .info {
+        width: 80%;
+        margin: calc(25 * $ratio-small);
+        padding: calc(5 * $ratio-small);
+        box-shadow: calc(0 * $ratio-small) calc(5 * $ratio-small) calc(45 * $ratio-small)
+          rgba(0, 0, 0, 0.25);
+
+        .id {
+          display: flex;
+          align-items: center;
+          margin: calc(25 * $ratio-small);
+          h2 {
+            font-weight: 700;
+            font-size: calc(24 * $ratio-small);
+            margin: calc(0 * $ratio-small);
+          }
+          h3 {
+            font-weight: 400;
+            font-size: calc(20 * $ratio-small);
+            color: $color-header-info;
+            margin: calc(0 * $ratio-small);
+          }
+        }
+
+        .description {
+          display: flex;
+          align-items: center;
+          margin: calc(25 * $ratio-small);
+          h2 {
+            font-weight: 700;
+            font-size: calc(24 * $ratio-small);
+            margin: calc(0 * $ratio-small);
+            h3 {
+              font-weight: 400;
+              font-size: calc(20 * $ratio-small);
+              color: $color-header-info;
+              margin: calc(0 * $ratio-small);
+            }
+          }
+        }
+        .price {
+          display: flex;
+          align-items: center;
+          margin: calc(25 * $ratio-small);
+          h2 {
+            font-weight: 700;
+            font-size: calc(24 * $ratio-small);
+
+            margin: calc(0 * $ratio-small);
+          }
+          h3 {
+            font-weight: 400;
+            font-size: calc(20 * $ratio-small);
+            color: $color-header-info;
+            margin: calc(0 * $ratio-small);
+          }
+        }
+
+        .containerButton {
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: right;
+          height: calc(100 * $ratio-small);
+          margin: calc(25 * $ratio-small);
+
+          .buttonCart {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            border: none;
+            background: none;
+            border: 2px solid $color-header-info;
+            border-radius: 1%;
+            width: 40%;
+            height: calc(75 * $ratio-small);
+            color: $color-white;
+            padding: 0;
+            --myColor1: #ffffff;
+            background-color: $color-header-navbar-hover;
+            font-size: calc(15 * $ratio-small);
+          }
+
+          .cartIcon path {
+            fill: var(--myColor1);
+          }
+
+          .buttonCart:active {
+            border-color: $color-header-info;
+            color: $color-header-info;
+            background-color: $color-white;
+            --myColor1: #969696;
+          }
+          .buttonCart:hover {
+            border-color: $color-header-info;
+            color: $color-header-info;
+            background-color: $color-white;
+            --myColor1: #969696;
+          }
+
+          .cartIcon {
+            width: calc(25 * $ratio-small);
+            height: calc(25 * $ratio-small);
+          }
+
+          .buttonCounter {
+            border: none;
+            background: none;
+            border: none;
+            width: 10%;
+            padding: 0;
+            --myColor1: #000000;
+          }
+
+          .counterIcon path {
+            fill: var(--myColor1);
+          }
+
+          .buttonCounter:active {
+            --myColor1: #969696;
+          }
+          .buttonCounter:hover {
+            --myColor1: #969696;
+          }
+
+          .counterIcon {
+            width: calc(50 * $ratio-small);
+            height: calc(50 * $ratio-small);
+          }
+
+          .counter {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 10%;
+            font-size: calc(20 * $ratio-small);
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .root {
+      padding-top: calc(94 * $ratio-small);
+
+      .containerButton {
+        font-size: calc(8 * $ratio-small);
+        line-height: calc(8 * $ratio-small);
+      }
+    }
+  }
 }

@@ -101,6 +101,7 @@
 
   .section-header-navbar-panel__container path {
     fill: var(--myColor1);
+    stroke: none;
   }
 
   .section-header-navbar-panel__container-input {
@@ -113,6 +114,7 @@
   }
 
   .section-header-navbar-panel__container {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,5 +127,230 @@
     background-color: $color-header-navbar-hover;
     color: $color-white;
     --myColor1: #ffffff;
+  }
+
+  .section-header-navbar-panel__container_counter {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 50%;
+    right: 20%;
+    width: calc(25 * $ratio-big);
+    height: calc(25 * $ratio-big);
+    border: 1px solid $color-header-info;
+    border-radius: 50%;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: calc(12 * $ratio-big);
+    line-height: calc(16 * $ratio-big);
+    color: $color-header-info;
+  }
+
+  .section-header-navbar-panel__container:hover > .section-header-navbar-panel__container_counter {
+    border: 1px solid $color-white;
+    color: $color-white;
+  }
+
+  .section-header-navbar-panel__container_icon-cart {
+    width: calc(45 * $ratio-big);
+    height: calc(45 * $ratio-big);
+  }
+
+  .section-header-navbar-panel__container_icon-like {
+    width: calc(45 * $ratio-big);
+    height: calc(45 * $ratio-big);
+  }
+
+  .body {
+    width: 100%;
+    min-height: calc(100vh - calc(44 * $ratio-big));
+  }
+  
+  .footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: calc(44 * $ratio-big);
+    background-color: $color-black;
+    color: $color-header-info;
+    caret-color: transparent;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .root {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    cursor: default;
+  }
+
+  .section-header-info {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: calc(44 * $ratio-small);
+    background-color: $color-black;
+    color: $color-header-info;
+    caret-color: transparent;
+  }
+
+  .section-header-info__title {
+    margin-left: calc(15 * $ratio-small);
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: calc(12 * $ratio-small);
+    line-height: calc(16 * $ratio-small);
+  }
+
+  .section-header-info-link {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: calc(50 * $ratio-small);
+  }
+
+  .section-header-info-link__entry {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: calc(12 * $ratio-small);
+    line-height: calc(16 * $ratio-small);
+  }
+
+  .section-header-info-link__registration {
+    margin-left: calc(15 * $ratio-small);
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: calc(12 * $ratio-small);
+    line-height: calc(16 * $ratio-small);
+  }
+
+  .section-header-info-icon__phone {
+    width: calc(25 * $ratio-small);
+    margin-left: calc(25 * $ratio-small);
+  }
+
+  .section-header-info-icon__entry {
+    width: calc(25 * $ratio-small);
+  }
+
+  .section-header-info-link__entry:hover {
+    color: $color-white;
+  }
+
+  .section-header-info-link__registration:hover {
+    color: $color-white;
+  }
+
+  .section-header-navbar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: calc(50 * $ratio-small);
+    background-color: $color-header-navbar;
+    color: $color-white;
+    caret-color: transparent;
+  }
+
+  .section-header-navbar__logo {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    font-family: 'Post No Bills Jaffna';
+    font-weight: 700;
+    font-size: calc(24 * $ratio-small);
+    line-height: calc(54 * $ratio-small);
+  }
+
+  .section-header-navbar-panel {
+    display: flex;
+    justify-content: right;
+    width: 80%;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: calc(10 * $ratio-small);
+    line-height: calc(18 * $ratio-small);
+    color: $color-header-info;
+  }
+
+  .section-header-navbar-panel__container path {
+    fill: var(--myColor1);
+    stroke: none;
+  }
+
+  .section-header-navbar-panel__container-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: calc(80 * $ratio-small);
+    --myColor1: #969696;
+  }
+
+  .section-header-navbar-panel__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: calc(50 * $ratio-small);
+    --myColor1: #969696;
+  }
+
+  .section-header-navbar-panel__container:hover {
+    background-color: $color-header-navbar-hover;
+    color: $color-white;
+    --myColor1: #ffffff;
+  }
+
+  .section-header-navbar-panel__container_counter {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 50%;
+    right: 25%;
+    width: calc(15 * $ratio-small);
+    height: calc(15 * $ratio-small);
+    border: 1px solid $color-header-info;
+    border-radius: 50%;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: calc(8 * $ratio-small);
+    line-height: calc(16 * $ratio-small);
+    color: $color-header-info;
+  }
+
+  .section-header-navbar-panel__container:hover > .section-header-navbar-panel__container_counter {
+    border: 1px solid $color-white;
+    color: $color-white;
+  }
+
+  .section-header-navbar-panel__container_icon-cart {
+    width: calc(25 * $ratio-small);
+    height: calc(25 * $ratio-small);
+  }
+
+  .section-header-navbar-panel__container_icon-like {
+    width: calc(25 * $ratio-small);
+    height: calc(25 * $ratio-small);
+  }
+
+  .body {
+    width: 100%;
+    min-height: calc(100vh - calc(44 * $ratio-big));
+  }
+
+  .footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: calc(44 * $ratio-big);
+    background-color: $color-black;
+    color: $color-header-info;
+    caret-color: transparent;
   }
 }

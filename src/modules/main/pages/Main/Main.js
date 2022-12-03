@@ -1,29 +1,37 @@
 import React, { useEffect, useRef, useState } from 'react'
-import { MainLayout } from '../../../../shared'
+import { useDispatch, useSelector } from 'react-redux'
 
 import api from '../../config/api'
 import { ProductItem } from './components'
+import { MainLayout } from '../../../../shared'
 
 import { SearchIcon, CrossIcon, CategoryIcon } from '../../../../assets/icons'
 import mainImage from '../../../../assets/images/Main_1.png'
 import s from './Main.module.scss'
+import { setIsLoading, setProducts } from 'modules/main/store/mainSlice'
 
 //Получение данных из локального json файла
 // import { PRODUCTS } from '../../../../_mocks/mocks'
 
 const Main = () => {
-  const [products, setProducts] = useState([])
-  const [isLoading, setIsLoading] = useState(false)
 
+  //Redux
+  const { products, isLoading } = useSelector((state) => state.mainReducer)
+  const dispatch = useDispatch()
+
+  //Фильтр по поиску
   const [searchInput, setSearchInput] = useState('')
   const [foundProducts, setFoundProducts] = useState([])
 
+  //Фильтр по категориям
   const [categories, setCategories] = useState([])
   const [selectedCategory, setSelectedCategory] = useState('')
   const [filteredProducts, setFilteredProducts] = useState([])
 
+  //Совмещение двух фильтров
   const [totalProducts, setTotalProducts] = useState([])
 
+  //Сброс фильтров
   const [filterIsActive, setFilterIsActive] = useState(false)
   const [searchIsActive, setSearchIsActive] = useState(false)
 
@@ -34,10 +42,10 @@ const Main = () => {
   }
 
   useEffect(() => {
-    setIsLoading(true)
+    dispatch(setIsLoading(true))
     api.fetchProducts().then((data) => {
-      setProducts(data)
-      setIsLoading(false)
+      dispatch(setProducts(data))
+      dispatch(setIsLoading(false))
       setFoundProducts(data)
       setTotalProducts(data)
       setCategories(['Выбор категории', ...Array.from(new Set(data.map((item) => item.category)))])
@@ -61,7 +69,7 @@ const Main = () => {
 
   const deleteFilter = () => {
     setFilteredProducts(products)
-    document.getElementById('select').selectedIndex = 0
+    setSelectedCategory('')
     setFilterIsActive(false)
   }
 
@@ -74,8 +82,8 @@ const Main = () => {
   }, [selectedCategory, products])
 
   useEffect(() => {
-    console.log('found', foundProducts)
-    console.log('filtered', filteredProducts)
+    // console.log('found', foundProducts)
+    // console.log('filtered', filteredProducts)
 
     if (filteredProducts.length !== products.length) {
       const totalProducts = foundProducts.filter(
@@ -86,7 +94,7 @@ const Main = () => {
       setTotalProducts(foundProducts)
     }
 
-    console.log(totalProducts)
+    // console.log(totalProducts)
   }, [foundProducts, filteredProducts])
 
   return (
@@ -94,13 +102,13 @@ const Main = () => {
       <div className={s.root}>
         <div className={s.navigation}>
           <button className={s.category} onClick={FilterDisplay}>
-            <CategoryIcon />
+            <CategoryIcon className={s.categoryIcon} />
           </button>
           <select
             className={s.select}
             style={{ display: filterIsActive ? 'block' : 'none' }}
             name='select'
-            id='select'
+            value={selectedCategory}
             onChange={(event) => {
               setSelectedCategory(event.target.value)
             }}
@@ -117,7 +125,7 @@ const Main = () => {
             id='cross'
             onClick={deleteFilter}
           >
-            <CrossIcon />
+            <CrossIcon className={s.crossIcon} />
           </button>
           <input
             className={s.input}
@@ -141,14 +149,13 @@ const Main = () => {
             id='cross_search'
             onClick={deleteSearch}
           >
-            <CrossIcon />
+            <CrossIcon className={s.crossIcon} />
           </button>
           <button className={s.button} type={'button'} onClick={onSearch} ref={searchButtonRef}>
-            <SearchIcon />
+            <SearchIcon className={s.searchIcon} />
           </button>
         </div>
-
-        <div className={s.heading}>
+        <div className={s.heading} id={'catalog'}>
           <h1>Новые поступления</h1>
           <div className={s.line}></div>
         </div>
@@ -171,19 +178,6 @@ const Main = () => {
             ) : (
               <h1>Loading...</h1>
             )}
-          </div>
-        </div>
-
-        <div className={s.main}>
-          <img className={s.image} src={mainImage} />
-          <div className={s.container}>
-            <div className={s.logo}>RASSELL SHOP</div>
-            <div className={s.line}></div>
-            <div className={s.city}>UFA</div>
-          </div>
-          <div className={s.description}>
-            Мы открылись и Нам «Есть чем удивить»! Мы действительно долго старались и Вы можете сами
-            убедиться в этом! Новое оформление, постоянно растущий ассортимент и новые низкие цены!
           </div>
         </div>
       </div>

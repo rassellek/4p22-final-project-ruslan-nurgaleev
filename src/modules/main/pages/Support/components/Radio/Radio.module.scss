@@ -1,0 +1,270 @@
+@import '../../../../../../assets/styles/variables.scss';
+@import '../../../../../../assets/fonts/fonts.scss';
+
+@media screen and (min-width: 769px) {
+  .root {
+    position: relative;
+    display: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(120 * $ratio-big);
+    margin-bottom: calc(35 * $ratio-big);
+
+    font-family: 'Comfortaa';
+    font-weight: 400;
+    font-size: calc(18 * $ratio-big);
+    line-height: calc(18 * $ratio-big);
+    caret-color: transparent;
+  }
+
+  .errorMsg {
+    position: absolute;
+    right: 0;
+    color: red;
+    font-weight: 400;
+    pointer-events: none;
+  }
+
+  .radioDefault {
+    color: $color-header-info;
+  }
+
+  .radioDefault:focus {
+    outline: none;
+  }
+
+  .radioError {
+    color: red;
+  }
+
+  .label {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: calc(15 * $ratio-big);
+    height: calc(15 * $ratio-big);
+    width: 100%;
+    font-weight: 700;
+    caret-color: transparent;
+  }
+
+  .value1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: calc(15 * $ratio-big);
+    width: 100%;
+    height: calc(20 * $ratio-big);
+    caret-color: transparent;
+  }
+
+  .value1 > input {
+    position: absolute;
+    margin: 0 auto;
+    width: calc(20 * $ratio-big);
+    height: calc(20 * $ratio-big);
+    opacity: 0;
+  }
+
+  .value1 > label {
+    position: absolute;
+    padding-left: calc(30 * $ratio-big);
+    caret-color: transparent;
+  }
+
+  .value1 label::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(12 * $ratio-big);
+    height: calc(12 * $ratio-big);
+    padding: calc(2 * $ratio-big);
+    border: 2px solid $color-header-info;
+    border-radius: 50%;
+    background-clip: content-box;
+  }
+
+  .value1 input:checked + label::before {
+    background-color: $color-header-info;
+  }
+
+  .value2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: calc(20 * $ratio-big);
+    caret-color: transparent;
+  }
+
+  .value2 > input {
+    position: absolute;
+    margin: 0 auto;
+    width: calc(20 * $ratio-big);
+    height: calc(20 * $ratio-big);
+    opacity: 0;
+  }
+
+  .value2 > label {
+    position: absolute;
+    padding-left: calc(30 * $ratio-big);
+    caret-color: transparent;
+  }
+
+  .value2 label::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(12 * $ratio-big);
+    height: calc(12 * $ratio-big);
+    padding: calc(2 * $ratio-big);
+    border: 2px solid $color-header-info;
+    border-radius: 50%;
+    background-clip: content-box;
+  }
+
+  .value2 input:checked + label::before {
+    background-color: $color-header-info;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .root {
+    position: relative;
+    display: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(120 * $ratio-small);
+    margin-bottom: calc(35 * $ratio-small);
+
+    font-family: 'Comfortaa';
+    font-weight: 400;
+    font-size: calc(18 * $ratio-small);
+    line-height: calc(18 * $ratio-small);
+    caret-color: transparent;
+  }
+
+  .errorMsg {
+    position: absolute;
+    right: 0;
+    color: red;
+    font-weight: 400;
+    pointer-events: none;
+  }
+
+  .radioDefault {
+    color: $color-header-info;
+  }
+
+  .radioDefault:focus {
+    outline: none;
+  }
+
+  .radioError {
+    color: red;
+  }
+
+  .label {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-bottom: calc(15 * $ratio-small);
+    height: calc(15 * $ratio-small);
+    width: 100%;
+    font-weight: 700;
+    caret-color: transparent;
+  }
+
+  .value1 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: calc(15 * $ratio-small);
+    width: 100%;
+    height: calc(20 * $ratio-small);
+    caret-color: transparent;
+  }
+
+  .value1 > input {
+    position: absolute;
+    margin: 0 auto;
+    width: calc(20 * $ratio-small);
+    height: calc(20 * $ratio-small);
+    opacity: 0;
+  }
+
+  .value1 > label {
+    position: absolute;
+    padding-left: calc(30 * $ratio-small);
+    caret-color: transparent;
+  }
+
+  .value1 label::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(12 * $ratio-small);
+    height: calc(12 * $ratio-small);
+    padding: calc(2 * $ratio-small);
+    border: 2px solid $color-header-info;
+    border-radius: 50%;
+    background-clip: content-box;
+  }
+
+  .value1 input:checked + label::before {
+    background-color: $color-header-info;
+  }
+
+  .value2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: calc(20 * $ratio-small);
+    caret-color: transparent;
+  }
+
+  .value2 > input {
+    position: absolute;
+    margin: 0 auto;
+    width: calc(20 * $ratio-small);
+    height: calc(20 * $ratio-small);
+    opacity: 0;
+  }
+
+  .value2 > label {
+    position: absolute;
+    padding-left: calc(30 * $ratio-small);
+    caret-color: transparent;
+  }
+
+  .value2 label::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(12 * $ratio-small);
+    height: calc(12 * $ratio-small);
+    padding: calc(2 * $ratio-small);
+    border: 2px solid $color-header-info;
+    border-radius: 50%;
+    background-clip: content-box;
+  }
+
+  .value2 input:checked + label::before {
+    background-color: $color-header-info;
+  }
+}

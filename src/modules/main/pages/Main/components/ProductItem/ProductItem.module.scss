@@ -1,37 +1,392 @@
 @import '../../../../../../assets/styles/variables.scss';
 @import '../../../../../../assets/fonts/fonts.scss';
 
-.root {
-  font-family: 'Playfair Display';
-  font-weight: 400;
-  font-size: calc(18 * $ratio-big);
-  line-height: calc(21 * $ratio-big);
-  cursor: pointer;
+@media screen and (min-width: 769px) {
+  .root {
+    font-family: 'Comfortaa';
+    font-weight: 700;
+    font-size: calc(18 * $ratio-big);
+    line-height: calc(21 * $ratio-big);
+    padding: calc(15 * $ratio-big);
+    cursor: pointer;
+    height: calc(575 * $ratio-big);
 
-  .containerImage {
+    .containerImage {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: calc(260 * $ratio-big);
+      height: calc(325 * $ratio-big);
+      margin-bottom: calc(25 * $ratio-big);
+    }
+
+    .image {
+      width: calc(250 * $ratio-big);
+      height: calc(315 * $ratio-big);
+    }
+
+    .title {
+      width: calc(260 * $ratio-big);
+      height: calc(100 * $ratio-big);
+      margin-bottom: calc(25 * $ratio-big);
+    }
+
+    .prise {
+      width: calc(260 * $ratio-big);
+      height: calc(25 * $ratio-big);
+      font-weight: 400;
+      color: $color-header-info;
+    }
+
+    .description {
+    }
+
+    .containerButton {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: calc(260 * $ratio-big);
+      height: calc(50 * $ratio-big);
+      display: none;
+
+      .containerButtonLike {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        width: 50%;
+        height: 100%;
+
+        .buttonLike {
+          border: none;
+          background: none;
+          border: none;
+          width: 50%;
+          padding: 0;
+          --myColor1: #ffffff;
+          --myColor2: #969696;
+        }
+        .likeIcon path {
+          fill: var(--myColor1);
+          stroke: var(--myColor2);
+        }
+
+        .buttonLike:active {
+          --myColor1: #e30e7f;
+          --myColor2: #e30e7f;
+        }
+
+        .likeIcon {
+          width: calc(25 * $ratio-big);
+          height: calc(25 * $ratio-big);
+        }
+
+        .buttonDislike {
+          border: none;
+          background: none;
+          border: none;
+          width: 50%;
+          padding: 0;
+          --myColor1: #e30e7f;
+          --myColor2: #e30e7f;
+        }
+
+        .dislikeIcon {
+          width: calc(25 * $ratio-big);
+          height: calc(25 * $ratio-big);
+        }
+
+        .dislikeIcon path {
+          fill: var(--myColor2);
+          stroke: var(--myColor2);
+        }
+
+        .buttonDislike:active {
+          --myColor2: #969696;
+          --myColor2: #969696;
+        }
+      }
+      .containerButtonCart {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        width: 50%;
+        height: 100%;
+
+        .buttonCart {
+          border: none;
+          background: none;
+          border: 2px solid $color-header-info;
+          border-radius: 5%;
+          width: 50%;
+          padding: 0;
+          --myColor1: #969696;
+        }
+
+        .cartIcon path {
+          fill: var(--myColor1);
+        }
+
+        .buttonCart:active {
+          border-color: $color-header-info;
+          background-color: $color-header-navbar-hover;
+          --myColor1: #969696;
+        }
+        .buttonCart:hover {
+          border-color: $color-header-info;
+          background-color: $color-header-navbar-hover;
+          --myColor1: #969696;
+        }
+
+        .cartIcon {
+          width: calc(25 * $ratio-big);
+          height: calc(25 * $ratio-big);
+        }
+
+        .buttonCounter {
+          border: none;
+          background: none;
+          border: none;
+          width: 40%;
+          padding: 0;
+          --myColor1: #000000;
+        }
+
+        .counterIcon path {
+          fill: var(--myColor1);
+        }
+
+        .buttonCounter:active {
+          --myColor1: #969696;
+        }
+        .buttonCounter:hover {
+          --myColor1: #969696;
+        }
+
+        .counterIcon {
+          width: calc(25 * $ratio-big);
+          height: calc(25 * $ratio-big);
+        }
+
+        .counter {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 20%;
+          font-size: calc(20 * $ratio-big);
+        }
+      }
+    }
+  }
+
+  .root:hover {
+    box-shadow: calc(0 * $ratio-big) calc(5 * $ratio-big) calc(45 * $ratio-big) rgba(0, 0, 0, 0.25);
+    border-radius: calc(25 * $ratio-big);
+  }
+
+  .root:hover > .containerButton {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: calc(260 * $ratio-big);
-    height: calc(325 * $ratio-big);
-    background-color: $color-productItem-image;
-    margin-bottom: calc(25 * $ratio-big);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .root {
+    font-family: 'Comfortaa';
+    font-weight: 700;
+    font-size: calc(14 * $ratio-small);
+    line-height: calc(21 * $ratio-small);
+    padding: calc(15 * $ratio-small);
+    cursor: pointer;
+    height: calc(350 * $ratio-small);
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .containerImage {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: calc(120 * $ratio-small);
+        height: calc(160 * $ratio-small);
+        margin-bottom: calc(25 * $ratio-small);
+
+        .image {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: calc(110 * $ratio-small);
+          height: calc(150 * $ratio-small);
+        }
+      }
+    }
+
+    .title {
+      width: calc(260 * $ratio-small);
+      height: calc(70 * $ratio-small);
+      margin-bottom: calc(10 * $ratio-small);
+    }
+
+    .prise {
+      width: calc(260 * $ratio-small);
+      height: calc(25 * $ratio-small);
+      font-weight: 400;
+      color: $color-header-info;
+    }
+
+    .description {
+    }
+
+    .containerButton {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: calc(260 * $ratio-small);
+      height: calc(50 * $ratio-small);
+      display: none;
+
+      .containerButtonLike {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        width: 50%;
+        height: 100%;
+
+        .buttonLike {
+          border: none;
+          background: none;
+          border: none;
+          width: 50%;
+          padding: 0;
+          --myColor1: #ffffff;
+          --myColor2: #969696;
+        }
+        .likeIcon path {
+          fill: var(--myColor1);
+          stroke: var(--myColor2);
+        }
+
+        .buttonLike:active {
+          --myColor1: #e30e7f;
+          --myColor2: #e30e7f;
+        }
+
+        .likeIcon {
+          width: calc(20 * $ratio-small);
+          height: calc(20 * $ratio-small);
+        }
+
+        .buttonDislike {
+          border: none;
+          background: none;
+          border: none;
+          width: 50%;
+          padding: 0;
+          --myColor1: #e30e7f;
+          --myColor2: #e30e7f;
+        }
+
+        .dislikeIcon {
+          width: calc(20 * $ratio-small);
+          height: calc(20 * $ratio-small);
+        }
+
+        .dislikeIcon path {
+          fill: var(--myColor2);
+          stroke: var(--myColor2);
+        }
+
+        .buttonDislike:active {
+          --myColor2: #969696;
+          --myColor2: #969696;
+        }
+      }
+      .containerButtonCart {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        width: 50%;
+        height: 100%;
+
+        .buttonCart {
+          border: none;
+          background: none;
+          border: 2px solid $color-header-info;
+          border-radius: 5%;
+          width: 50%;
+          padding: 0;
+          --myColor1: #969696;
+        }
+
+        .cartIcon path {
+          fill: var(--myColor1);
+        }
+
+        .buttonCart:active {
+          border-color: $color-header-info;
+          background-color: $color-header-navbar-hover;
+          --myColor1: #969696;
+        }
+        .buttonCart:hover {
+          border-color: $color-header-info;
+          background-color: $color-header-navbar-hover;
+          --myColor1: #969696;
+        }
+
+        .cartIcon {
+          width: calc(20 * $ratio-small);
+          height: calc(20 * $ratio-small);
+        }
+
+        .buttonCounter {
+          border: none;
+          background: none;
+          border: none;
+          width: 40%;
+          padding: 0;
+          --myColor1: #000000;
+        }
+
+        .counterIcon path {
+          fill: var(--myColor1);
+        }
+
+        .buttonCounter:active {
+          --myColor1: #969696;
+        }
+        .buttonCounter:hover {
+          --myColor1: #969696;
+        }
+
+        .counterIcon {
+          width: calc(20 * $ratio-small);
+          height: calc(20 * $ratio-small);
+        }
+
+        .counter {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 20%;
+          font-size: calc(16 * $ratio-small);
+        }
+      }
+    }
   }
 
-  .image {
-    width: calc(215 * $ratio-big);
-    height: calc(215 * $ratio-big);
+  .root:hover {
+    box-shadow: calc(0 * $ratio-small) calc(5 * $ratio-small) calc(45 * $ratio-small)
+      rgba(0, 0, 0, 0.25);
+    border-radius: calc(25 * $ratio-small);
   }
 
-  .title {
-    width: calc(260 * $ratio-big);
-    margin-bottom: calc(25 * $ratio-big);
-  }
-
-  .prise {
-    width: calc(260 * $ratio-big);
-  }
-
-  .description {
+  .root:hover > .containerButton {
+    display: flex;
   }
 }

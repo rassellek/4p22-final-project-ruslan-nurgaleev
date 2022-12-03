@@ -1,0 +1,532 @@
+@import '../../../../../../assets/styles/variables.scss';
+@import '../../../../../../assets/fonts/fonts.scss';
+
+@media screen and (min-width: 769px) {
+  .root {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    box-shadow: calc(0 * $ratio-big) calc(5 * $ratio-big) calc(45 * $ratio-big) rgba(0, 0, 0, 0.25);
+    border-radius: calc(25 * $ratio-big);
+
+    padding: calc(25 * $ratio-big);
+    width: 90%;
+    height: calc(400 * $ratio-big);
+    border-radius: 10px;
+    margin: calc(50 * $ratio-big);
+    font-family: 'Comfortaa';
+
+    .containerDelete {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 10%;
+
+      .buttonDelete {
+        border: none;
+        background: none;
+        border: none;
+        width: 100%;
+        padding: 0;
+        --myColor1: #969696;
+
+        .deleteIcon {
+          width: calc(35 * $ratio-big);
+          height: calc(35 * $ratio-big);
+        }
+
+        .deleteIcon path {
+          fill: var(--myColor1);
+        }
+
+        .titleDelete {
+          font-weight: 400;
+          font-size: calc(12 * $ratio-big);
+          line-height: calc(12 * $ratio-big);
+          margin: 0;
+        }
+      }
+
+      .buttonDelete:active {
+        --myColor1: #000000;
+        color: #000000;
+      }
+      .buttonDelete:hover {
+        --myColor1: #000000;
+        color: $color-black;
+      }
+    }
+
+    .containerImage {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20%;
+      max-height: calc(200 * $ratio-big);
+      height: 100%;
+
+      img {
+        height: 100%;
+      }
+    }
+
+    .info {
+      display: column;
+      align-items: center;
+      width: 50%;
+      height: 100%;
+      margin: 0;
+      padding: calc(15 * $ratio-big);
+
+      .title {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding: calc(0 * $ratio-big);
+        margin: calc(10 * $ratio-big);
+        width: 100%;
+        height: 20%;
+        font-weight: 700;
+        font-size: calc(24 * $ratio-big);
+        line-height: calc(24 * $ratio-big);
+      }
+      .description {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding: calc(0 * $ratio-big);
+        margin: calc(10 * $ratio-big);
+        width: 100%;
+        height: 60%;
+        font-weight: 400;
+        font-size: calc(14 * $ratio-big);
+        line-height: calc(24 * $ratio-big);
+      }
+    }
+
+    .containerButton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40%;
+
+      .containerAdd {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 50%;
+
+        .buttonAdd {
+          border: none;
+          background: none;
+          border: none;
+          width: 50%;
+          padding: 0;
+          --myColor1: #969696;
+
+          .addIcon path {
+            fill: var(--myColor1);
+          }
+
+          .addIcon {
+            width: calc(35 * $ratio-big);
+            height: calc(35 * $ratio-big);
+          }
+          .titleAdd {
+            font-weight: 400;
+            font-size: calc(12 * $ratio-big);
+            line-height: calc(12 * $ratio-big);
+            margin: 0;
+          }
+        }
+
+        .buttonAdd:active {
+          --myColor1: #000000;
+          color: #000000;
+        }
+        .buttonAdd:hover {
+          --myColor1: #000000;
+          color: #000000;
+        }
+      }
+
+      .price {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        font-weight: 700;
+        font-size: calc(36 * $ratio-big);
+        line-height: calc(36 * $ratio-big);
+      }
+    }
+
+    .containerBig {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: calc(35 * $ratio-big);
+
+      .containerCounter {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        width: 30%;
+        height: 100%;
+
+        .buttonCounter {
+          border: none;
+          background: none;
+          border: none;
+          width: 40%;
+          padding: 0;
+          --myColor1: #000000;
+        }
+
+        .counterIcon path {
+          fill: var(--myColor1);
+        }
+
+        .buttonCounter:active {
+          --myColor1: #969696;
+        }
+        .buttonCounter:hover {
+          --myColor1: #969696;
+        }
+
+        .counterIcon {
+          width: calc(25 * $ratio-big);
+          height: calc(25 * $ratio-big);
+        }
+
+        .counter {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 20%;
+          font-size: calc(20 * $ratio-big);
+        }
+      }
+
+      .containerDelete {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+
+        .buttonDelete {
+          border: none;
+          background: none;
+          border: none;
+          width: 100%;
+          padding: 0;
+          --myColor1: #969696;
+
+          .deleteIcon {
+            width: calc(35 * $ratio-big);
+            height: calc(35 * $ratio-big);
+          }
+
+          .deleteIcon path {
+            fill: var(--myColor1);
+          }
+
+          .titleDelete {
+            font-weight: 400;
+            font-size: calc(12 * $ratio-big);
+            line-height: calc(12 * $ratio-big);
+            margin: 0;
+          }
+        }
+
+        .buttonDelete:active {
+          --myColor1: #000000;
+          color: #000000;
+        }
+        .buttonDelete:hover {
+          --myColor1: #000000;
+          color: $color-black;
+        }
+      }
+
+      .price {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40%;
+        font-weight: 700;
+        font-size: calc(36 * $ratio-big);
+        line-height: calc(36 * $ratio-big);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .root {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    box-shadow: calc(0 * $ratio-small) calc(5 * $ratio-small) calc(45 * $ratio-small) rgba(0, 0, 0, 0.25);
+    border-radius: calc(25 * $ratio-small);
+
+    padding: calc(10 * $ratio-small);
+    width: 90%;
+    height: calc(200 * $ratio-small);
+    border-radius: 10px;
+    margin: calc(30 * $ratio-small);
+    font-family: 'Comfortaa';
+
+    .containerDelete {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 10%;
+
+      .buttonDelete {
+        border: none;
+        background: none;
+        border: none;
+        width: 100%;
+        padding: 0;
+        --myColor1: #969696;
+
+        .deleteIcon {
+          width: calc(25 * $ratio-small);
+          height: calc(25 * $ratio-small);
+        }
+
+        .deleteIcon path {
+          fill: var(--myColor1);
+        }
+
+        .titleDelete {
+          font-weight: 400;
+          font-size: calc(8 * $ratio-small);
+          line-height: calc(12 * $ratio-small);
+          margin: 0;
+        }
+      }
+
+      .buttonDelete:active {
+        --myColor1: #000000;
+        color: #000000;
+      }
+      .buttonDelete:hover {
+        --myColor1: #000000;
+        color: $color-black;
+      }
+    }
+
+    .containerImage {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20%;
+      max-height: calc(150 * $ratio-small);
+      height: 100%;
+
+      img {
+        height: 40%;
+      }
+    }
+
+    .info {
+      display: column;
+      align-items: center;
+      width: 50%;
+      height: 100%;
+      margin: 0;
+      padding: calc(5 * $ratio-small);
+
+      .title {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding: calc(0 * $ratio-small);
+        margin: calc(10 * $ratio-small);
+        width: 100%;
+        height: 20%;
+        font-weight: 700;
+        font-size: calc(12 * $ratio-small);
+        line-height: calc(12 * $ratio-small);
+      }
+      .description {
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding: calc(0 * $ratio-small);
+        margin: calc(10 * $ratio-small);
+        width: 100%;
+        height: 60%;
+        font-weight: 400;
+        font-size: calc(8 * $ratio-small);
+        line-height: calc(12 * $ratio-small);
+      }
+    }
+
+    .containerButton {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40%;
+
+      .containerAdd {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 50%;
+
+        .buttonAdd {
+          border: none;
+          background: none;
+          border: none;
+          width: 50%;
+          padding: 0;
+          --myColor1: #969696;
+
+          .addIcon path {
+            fill: var(--myColor1);
+          }
+
+          .addIcon {
+            width: calc(25 * $ratio-small);
+            height: calc(25 * $ratio-small);
+          }
+          .titleAdd {
+            font-weight: 400;
+            font-size: calc(10 * $ratio-small);
+            line-height: calc(12 * $ratio-small);
+            margin: 0;
+          }
+        }
+
+        .buttonAdd:active {
+          --myColor1: #000000;
+          color: #000000;
+        }
+        .buttonAdd:hover {
+          --myColor1: #000000;
+          color: #000000;
+        }
+      }
+
+      .price {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        font-weight: 700;
+        font-size: calc(14 * $ratio-small);
+        line-height: calc(14 * $ratio-small);
+      }
+    }
+
+    .containerBig {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: calc(10 * $ratio-small);
+
+      .containerCounter {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: right;
+        width: 30%;
+        height: 100%;
+
+        .buttonCounter {
+          border: none;
+          background: none;
+          border: none;
+          width: 40%;
+          padding: 0;
+          --myColor1: #000000;
+        }
+
+        .counterIcon path {
+          fill: var(--myColor1);
+        }
+
+        .buttonCounter:active {
+          --myColor1: #969696;
+        }
+        .buttonCounter:hover {
+          --myColor1: #969696;
+        }
+
+        .counterIcon {
+          width: calc(15 * $ratio-small);
+          height: calc(15 * $ratio-small);
+        }
+
+        .counter {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 20%;
+          font-size: calc(12 * $ratio-small);
+        }
+      }
+
+      .containerDelete {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+
+        .buttonDelete {
+          border: none;
+          background: none;
+          border: none;
+          width: 100%;
+          padding: 0;
+          --myColor1: #969696;
+
+          .deleteIcon {
+            width: calc(25 * $ratio-small);
+            height: calc(25 * $ratio-small);
+          }
+
+          .deleteIcon path {
+            fill: var(--myColor1);
+          }
+
+          .titleDelete {
+            font-weight: 400;
+            font-size: calc(8 * $ratio-small);
+            line-height: calc(12 * $ratio-small);
+            margin: 0;
+          }
+        }
+
+        .buttonDelete:active {
+          --myColor1: #000000;
+          color: #000000;
+        }
+        .buttonDelete:hover {
+          --myColor1: #000000;
+          color: $color-black;
+        }
+      }
+
+      .price {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40%;
+        font-weight: 700;
+        font-size: calc(14 * $ratio-small);
+        line-height: calc(14 * $ratio-small);
+      }
+    }
+  }
+}

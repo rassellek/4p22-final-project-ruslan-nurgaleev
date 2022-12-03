@@ -1,13 +1,15 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import { useSelector } from 'react-redux'
 
-import { Input } from './components'
 import { PhoneIcon, EntryIcon, CartIcon, LikeIcon } from '../../assets/icons'
 
 import './MainLayout.scss'
 
 const MainLayout = (props) => {
   const navigate = useNavigate()
+  const cart = useSelector((state) => state.cartReducer)
+  const like = useSelector((state) => state.likeReducer)
 
   return (
     <div>
@@ -33,14 +35,17 @@ const MainLayout = (props) => {
         <section className='section-header-navbar'>
           <div className='section-header-navbar__logo'>RASSELL SHOP</div>
           <nav className='section-header-navbar-panel'>
-            {/* <div
-              className='section-header-navbar-panel__container-input'
+            <div
+              className='section-header-navbar-panel__container'
+              onClick={() => navigate('/home')}
+            >
+              ГЛАВНАЯ
+            </div>
+            <div
+              className='section-header-navbar-panel__container theme'
               onClick={() => navigate('/')}
             >
-              <Input />
-            </div> */}
-            <div className='section-header-navbar-panel__container' onClick={() => navigate('/')}>
-              ГЛАВНАЯ
+              КАТАЛОГ
             </div>
             <div
               className='section-header-navbar-panel__container'
@@ -52,19 +57,41 @@ const MainLayout = (props) => {
               className='section-header-navbar-panel__container'
               onClick={() => navigate('/like')}
             >
-              <LikeIcon onClick={() => navigate('/')} />
+              <LikeIcon className='section-header-navbar-panel__container_icon-like' />
+              {Object.keys(like).length > 0 ? (
+                <div className='section-header-navbar-panel__container_counter'>
+                  {Object.values(like).reduce((acc, item) => {
+                    acc += item
+                    return acc
+                  }, 0)}
+                </div>
+              ) : (
+                ''
+              )}
             </div>
             <div
               className='section-header-navbar-panel__container'
               onClick={() => navigate('/cart')}
             >
-              <CartIcon onClick={() => navigate('/')} />
+              <CartIcon className='section-header-navbar-panel__container_icon-cart' />
+              {Object.keys(cart).length > 0 ? (
+                <div className='section-header-navbar-panel__container_counter'>
+                  {Object.values(cart).reduce((acc, item) => {
+                    acc += item
+                    return acc
+                  }, 0)}
+                </div>
+              ) : (
+                ''
+              )}
             </div>
-            <div className='section-header-navbar-panel__container theme'></div>
           </nav>
         </section>
       </header>
-      <div>{props.children}</div>
+      <div className='body'>{props.children}</div>
+      <footer className='footer'>
+        <p>© This page is not intended for commercial use.</p>
+      </footer>
     </div>
   )
 }

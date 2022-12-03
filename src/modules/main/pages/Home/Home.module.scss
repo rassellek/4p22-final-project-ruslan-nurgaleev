@@ -1,0 +1,154 @@
+@import '../../../../assets/styles/variables.scss';
+@import '../../../../assets/fonts/fonts.scss';
+
+@media screen and (min-width: 769px) {
+  .root {
+    position: relative;
+    padding-top: calc(124 * $ratio-big);
+    caret-color: transparent;
+    cursor: default;
+
+    .main {
+      position: relative;
+      display: inline-block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: calc(1920 * $ratio-big);
+      height: calc(810 * $ratio-big);
+      caret-color: transparent;
+      color: $color-white;
+
+      .image {
+        width: calc(1920 * $ratio-big);
+        height: calc(810 * $ratio-big);
+      }
+      .container {
+        position: absolute;
+        display: column;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        aspect-ratio: 1;
+        border: 4px solid #fff;
+
+        .logo {
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          height: 50%;
+          font-family: 'Post No Bills Jaffna';
+          font-weight: 700;
+          font-size: calc(64 * $ratio-big);
+          line-height: calc(95 * $ratio-big);
+        }
+
+        .line {
+          margin-left: 12.5%;
+          width: 75%;
+          border: 1px #fff solid;
+        }
+        .city {
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          padding-top: 10%;
+          height: 40%;
+          font-family: 'Comfortaa';
+          font-weight: 400;
+          font-size: calc(44 * $ratio-big);
+          line-height: calc(28 * $ratio-big);
+        }
+      }
+
+      .description {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 50%;
+        margin-top: 25%;
+        font-family: 'Comfortaa';
+        font-weight: 400;
+        font-size: calc(24 * $ratio-big);
+        line-height: calc(24 * $ratio-big);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .root {
+    position: relative;
+    padding-top: calc(94 * $ratio-small);
+    caret-color: transparent;
+    cursor: default;
+
+    .main {
+      position: relative;
+      display: inline-block;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      caret-color: transparent;
+      color: $color-white;
+
+      .image {
+        width: 100%;
+      }
+      .container {
+        position: absolute;
+        display: column;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        aspect-ratio: 1;
+        border: 4px solid #fff;
+
+        .logo {
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          height: 50%;
+          font-family: 'Post No Bills Jaffna';
+          font-weight: 700;
+          font-size: calc(24 * $ratio-small);
+          line-height: calc(24 * $ratio-small);
+        }
+
+        .line {
+          margin-left: 12.5%;
+          width: 75%;
+          border: 1px #fff solid;
+        }
+        .city {
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          padding-top: 10%;
+          height: 40%;
+          font-family: 'PT Sans', sans-serif;
+          font-weight: 400;
+          font-size: calc(24 * $ratio-small);
+          line-height: calc(24 * $ratio-small);
+        }
+      }
+
+      .description {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 50%;
+        margin-top: 30%;
+        font-family: 'PT Sans', sans-serif;
+        font-weight: 400;
+        font-size: calc(14 * $ratio-small);
+        line-height: calc(14 * $ratio-small);
+      }
+    }
+  }
+}

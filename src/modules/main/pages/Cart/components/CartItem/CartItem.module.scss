@@ -1,0 +1,137 @@
+@import '../../../../../../assets/styles/variables.scss';
+@import '../../../../../../assets/fonts/fonts.scss';
+
+.root {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  box-shadow: calc(0 * $ratio-big) calc(5 * $ratio-big) calc(45 * $ratio-big) rgba(0, 0, 0, 0.25);
+  border-radius: calc(25 * $ratio-big);
+
+  padding: calc(25 * $ratio-big);
+  width: 90%;
+  height: calc(200 * $ratio-big);
+  border-radius: 10px;
+  margin: calc(50 * $ratio-big);
+  font-family: 'Comfortaa';
+
+  .containerDelete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+
+    .buttonDelete {
+      border: none;
+      background: none;
+      border: none;
+      width: 100%;
+      padding: 0;
+      --myColor1: #969696;
+
+      .deleteIcon {
+        width: calc(35 * $ratio-big);
+        height: calc(35 * $ratio-big);
+      }
+
+      .deleteIcon path {
+        fill: var(--myColor1);
+      }
+
+      .titleDelete {
+        font-weight: 400;
+        font-size: calc(12 * $ratio-big);
+        line-height: calc(12 * $ratio-big);
+        margin: 0;
+      }
+    }
+
+    .buttonDelete:active {
+      --myColor1: #000000;
+      color: #000000;
+    }
+    .buttonDelete:hover {
+      --myColor1: #000000;
+      color: $color-black;
+    }
+  }
+
+  .containerImage {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+    max-height: calc(120 * $ratio-big);
+
+    img {
+      height: 100%;
+    }
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: calc(15 * $ratio-big);
+    width: 40%;
+    height: 100%;
+    font-weight: 700;
+    font-size: calc(24 * $ratio-big);
+    line-height: calc(21 * $ratio-big);
+  }
+
+  .containerButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+
+    .buttonCounter {
+      border: none;
+      background: none;
+      border: none;
+      width: 40%;
+      padding: 0;
+      --myColor1: #000000;
+
+      .counterIcon path {
+        fill: var(--myColor1);
+      }
+
+      .counterIcon {
+        width: calc(35 * $ratio-big);
+        height: calc(35 * $ratio-big);
+      }
+    }
+
+    .buttonCounter:active {
+      --myColor1: #969696;
+    }
+    .buttonCounter:hover {
+      --myColor1: #969696;
+    }
+
+    .counter {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20%;
+      font-weight: 700;
+      font-size: calc(24 * $ratio-big);
+      line-height: calc(24 * $ratio-big);
+    }
+  }
+
+  .price {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+    font-weight: 700;
+    font-size: calc(36 * $ratio-big);
+    line-height: calc(36 * $ratio-big);
+  }
+}
