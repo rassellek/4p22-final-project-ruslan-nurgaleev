@@ -123,6 +123,32 @@
           height: calc(75 * $ratio-big);
         }
       }
+      .title {
+        width: 100%;
+        display: column;
+        align-items: center;
+        justify-content: left;
+        padding-left: calc(50 * $ratio-big);
+        font-size: calc(20 * $ratio-big);
+        line-height: calc(24 * $ratio-big);
+
+        .buttonNavigate {
+          border: none;
+          background: none;
+          font-size: calc(20 * $ratio-big);
+          line-height: calc(24 * $ratio-big);
+          padding-left: calc(50 * $ratio-big);
+        }
+        .buttonNavigate:active {
+          color: $color-header-info;
+          text-decoration: underline;
+        }
+
+        .buttonNavigate:hover {
+          color: $color-header-info;
+          text-decoration: underline;
+        }
+      }
     }
   }
 }
@@ -248,6 +274,32 @@
           width: 100%;
           margin-bottom: calc(25 * $ratio-small);
           height: calc(50 * $ratio-small);
+        }
+      }
+      .title {
+        width: 100%;
+        display: column;
+        align-items: center;
+        justify-content: left;
+        padding-left: calc(50 * $ratio-small);
+        font-size: calc(20 * $ratio-small);
+        line-height: calc(24 * $ratio-small);
+
+        .buttonNavigate {
+          border: none;
+          background: none;
+          font-size: calc(20 * $ratio-small);
+          line-height: calc(24 * $ratio-small);
+          padding-left: calc(50 * $ratio-small);
+        }
+        .buttonNavigate:active {
+          color: $color-header-info;
+          text-decoration: underline;
+        }
+
+        .buttonNavigate:hover {
+          color: $color-header-info;
+          text-decoration: underline;
         }
       }
     }

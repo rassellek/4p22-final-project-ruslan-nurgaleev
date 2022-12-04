@@ -14,6 +14,8 @@ import { validateEmail } from './Support.utils'
 const Support = () => {
   const navigate = useNavigate()
 
+  const [supportIsValid, setSupportIsValid] = useState(false)
+
   const [email, setEmail] = useState('')
   const [name, setName] = useState('')
   const [textarea, setTextarea] = useState('')
@@ -73,6 +75,7 @@ const Support = () => {
       isValid = false
     }
     if (isValid) {
+      setSupportIsValid(true)
       console.log(formData)
     }
   }
@@ -81,11 +84,11 @@ const Support = () => {
     <MainLayout>
       <div className={s.root}>
         <div className={s.navigate}>
-          <button className={s.buttonNavigate} onClick={() => navigate('/')}>
+          <button className={s.buttonNavigate} onClick={() => navigate('/home')}>
             <HouseIcon className={s.icon} />
           </button>
           <span>&nbsp;&gt;&nbsp;</span>
-          <button className={s.buttonNavigate} onClick={() => navigate('/')}>
+          <button className={s.buttonNavigate} onClick={() => navigate('/home')}>
             <h2>Главная</h2>
           </button>
           <span>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</span>
@@ -93,87 +96,106 @@ const Support = () => {
         </div>
 
         <div className={s.container}>
-          <form className={s.form} onSubmit={onSubmit}>
-            <div className={s.title}>Обратная связь</div>
+          {!supportIsValid ? (
+            <form className={s.form} onSubmit={onSubmit}>
+              <div className={s.title}>Обратная связь</div>
 
-            <Input
-              value={email}
-              placeholder={'Введите email'}
-              name={'email'}
-              onChange={(event) => {
-                setIsEmailInvalid(false)
-                setEmail(event.target.value)
-              }}
-              isInvalid={isEmailInvalid}
-              errorMessage={isErrorMessage}
-              label={'Email'}
-            />
-
-            <Input
-              value={name}
-              placeholder={'Введите имя'}
-              onChange={(event) => {
-                setIsNameInvalid(false)
-                setName(event.target.value)
-              }}
-              isInvalid={isNameInvalid}
-              errorMessage={'Поле обязательно для заполнения'}
-              label={'Введите имя'}
-            />
-
-            <Radio
-              value1={'Ошибка на сайте'}
-              value2={'Другое'}
-              id1={'radio-1'}
-              id2={'radio-2'}
-              name={'radio-group'}
-              onChange={(event) => {
-                setIsRadioInvalid(false)
-                setRadio(event.target.value)
-              }}
-              isInvalid={isRadioInvalid}
-              errorMessage={'Выберите тему обращения'}
-            />
-
-            <Textarea
-              value={textarea}
-              placeholder={'Опишите возникшую ситуацию максимально подробно...'}
-              onChange={(event) => {
-                setIsTextareaInvalid(false)
-                setTextarea(event.target.value)
-              }}
-              isInvalid={isTextareaInvalid}
-              errorMessage={'Поле обязательно для заполнения'}
-              label={'Сообщение'}
-            />
-
-            <Checkbox
-              name={'check'}
-              value={checkbox}
-              onChange={(event) => {
-                setIsCheckboxInvalid(false)
-                handleChange()
-              }}
-              isInvalid={isCheckboxInvalid}
-              errorMessage={'Подтвердите согласие'}
-            />
-            <div className={s.loading}>
-              <p>Скриншот</p>
-              <input
-                id='file-input'
-                type='file'
-                name='file'
-                multiple
+              <Input
+                value={email}
+                placeholder={'Введите email'}
+                name={'email'}
                 onChange={(event) => {
-                  setFile(event.target.value)
+                  setIsEmailInvalid(false)
+                  setEmail(event.target.value)
                 }}
+                isInvalid={isEmailInvalid}
+                errorMessage={isErrorMessage}
+                label={'Email'}
               />
-            </div>
 
-            <button type={'submit'} className={s.button}>
-              Отправить
-            </button>
-          </form>
+              <Input
+                value={name}
+                placeholder={'Введите имя'}
+                onChange={(event) => {
+                  setIsNameInvalid(false)
+                  setName(event.target.value)
+                }}
+                isInvalid={isNameInvalid}
+                errorMessage={'Поле обязательно для заполнения'}
+                label={'Введите имя'}
+              />
+
+              <Radio
+                value1={'Ошибка на сайте'}
+                value2={'Другое'}
+                id1={'radio-1'}
+                id2={'radio-2'}
+                name={'radio-group'}
+                onChange={(event) => {
+                  setIsRadioInvalid(false)
+                  setRadio(event.target.value)
+                }}
+                isInvalid={isRadioInvalid}
+                errorMessage={'Выберите тему обращения'}
+              />
+
+              <Textarea
+                value={textarea}
+                placeholder={'Опишите возникшую ситуацию максимально подробно...'}
+                onChange={(event) => {
+                  setIsTextareaInvalid(false)
+                  setTextarea(event.target.value)
+                }}
+                isInvalid={isTextareaInvalid}
+                errorMessage={'Поле обязательно для заполнения'}
+                label={'Сообщение'}
+              />
+
+              <Checkbox
+                name={'check'}
+                value={checkbox}
+                onChange={(event) => {
+                  setIsCheckboxInvalid(false)
+                  handleChange()
+                }}
+                isInvalid={isCheckboxInvalid}
+                errorMessage={'Подтвердите согласие'}
+              />
+              <div className={s.loading}>
+                <p>Скриншот</p>
+                <input
+                  id='file-input'
+                  type='file'
+                  name='file'
+                  multiple
+                  onChange={(event) => {
+                    setFile(event.target.value)
+                  }}
+                />
+              </div>
+
+              <button type={'submit'} className={s.button}>
+                Отправить
+              </button>
+            </form>
+          ) : (
+            <>
+              <h2 className={s.title}>
+                <p>Ваше обращение успешно отправлено!</p>
+                <p>Вы можете перейти на главную страницу или воспользоваться каталогом товаров.</p>
+                <p>
+                  <button className={s.buttonNavigate} onClick={() => navigate('/home')}>
+                    &gt; Вернуться на главную страницу.
+                  </button>
+                </p>
+                <p>
+                  <button className={s.buttonNavigate} onClick={() => navigate('/')}>
+                    &gt; Посмотреть каталог товаров.
+                  </button>
+                </p>
+              </h2>
+            </>
+          )}
         </div>
       </div>
     </MainLayout>

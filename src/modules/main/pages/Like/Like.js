@@ -21,11 +21,11 @@ const Like = () => {
     <MainLayout>
       <div className={s.root}>
         <div className={s.navigate}>
-          <button className={s.buttonNavigate} onClick={() => navigate('/')}>
+          <button className={s.buttonNavigate} onClick={() => navigate('/home')}>
             <HouseIcon className={s.icon} />
           </button>
           <span>&nbsp;&gt;&nbsp;</span>
-          <button className={s.buttonNavigate} onClick={() => navigate('/')}>
+          <button className={s.buttonNavigate} onClick={() => navigate('/home')}>
             <h2>Главная</h2>
           </button>
           <span>&nbsp;&nbsp;&gt;&nbsp;&nbsp;</span>
@@ -71,7 +71,7 @@ const Like = () => {
               <p>Сохраняйте товары, которые понравились, чтобы долго не искать.</p>
               <p>Вы можете перейти на главную страницу или воспользоваться каталогом товаров.</p>
               <p>
-                <button className={s.buttonNavigate} onClick={() => navigate('/')}>
+                <button className={s.buttonNavigate} onClick={() => navigate('/home')}>
                   &gt; Вернуться на главную страницу.
                 </button>
               </p>
