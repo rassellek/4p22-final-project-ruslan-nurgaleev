@@ -248,7 +248,6 @@
       font-family: 'Comfortaa';
       font-weight: 400;
       line-height: calc(24 * $ratio-small);
-      margin-left: calc(25 * $ratio-small);
 
       .containerInfo {
         display: column;
@@ -305,7 +304,7 @@
         justify-content: center;
         width: 50%;
         height: 100%;
-        margin: calc(25 * $ratio-small);
+
         .leftImage {
           position: absolute;
           top: 50%;
@@ -317,8 +316,8 @@
         }
         .rightImage {
           position: absolute;
-          top: 10%;
-          right: -10%;
+          top: 80%;
+          right: 0%;
           width: 50%;
         }
       }
