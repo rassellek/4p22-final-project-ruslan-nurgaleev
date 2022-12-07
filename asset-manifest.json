@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/4p22-final-project-ruslan-nurgaleev/static/css/main.57476e19.css",
-    "main.js": "/4p22-final-project-ruslan-nurgaleev/static/js/main.62521e9c.js",
+    "main.css": "/4p22-final-project-ruslan-nurgaleev/static/css/main.31902429.css",
+    "main.js": "/4p22-final-project-ruslan-nurgaleev/static/js/main.503c28ed.js",
     "static/media/Page404.png": "/4p22-final-project-ruslan-nurgaleev/static/media/Page404.0d2f55e26d2e7794ac63.png",
     "static/media/Main_1.png": "/4p22-final-project-ruslan-nurgaleev/static/media/Main_1.3a7d5adee0a326090894.png",
+    "static/media/Main_3.png": "/4p22-final-project-ruslan-nurgaleev/static/media/Main_3.fa447008121821e86af2.png",
     "static/media/BungeeSpice-Regular.ttf": "/4p22-final-project-ruslan-nurgaleev/static/media/BungeeSpice-Regular.eddfbab9ae86f463b66c.ttf",
+    "static/media/Main_5.png": "/4p22-final-project-ruslan-nurgaleev/static/media/Main_5.e7f8e0ae5c817c2dbd31.png",
     "static/media/PTSans-Regular.ttf": "/4p22-final-project-ruslan-nurgaleev/static/media/PTSans-Regular.77e92507394e2309d837.ttf",
     "static/media/PlayfairDisplay-Italic-VariableFont_wght.ttf": "/4p22-final-project-ruslan-nurgaleev/static/media/PlayfairDisplay-Italic-VariableFont_wght.8a3a30667c7d75e00588.ttf",
     "static/media/PostNoBillsJaffna-Bold.ttf": "/4p22-final-project-ruslan-nurgaleev/static/media/PostNoBillsJaffna-Bold.c2b6c26b6aec49110f75.ttf",
+    "static/media/Main_4.jpg": "/4p22-final-project-ruslan-nurgaleev/static/media/Main_4.b511729abefa4e4e3809.jpg",
     "static/media/Comfortaa-Regular.ttf": "/4p22-final-project-ruslan-nurgaleev/static/media/Comfortaa-Regular.051d690872878482e7e7.ttf",
     "static/media/Comfortaa-Bold.ttf": "/4p22-final-project-ruslan-nurgaleev/static/media/Comfortaa-Bold.059cc3e0c5d00a88354f.ttf",
     "static/media/Sun.svg": "/4p22-final-project-ruslan-nurgaleev/static/media/Sun.1912422632102deed281e5bf5f882a4d.svg",
@@ -26,11 +29,11 @@
     "static/media/PlusBlack.svg": "/4p22-final-project-ruslan-nurgaleev/static/media/PlusBlack.ab67289f2d977e205374fcd78eca9df4.svg",
     "static/media/Like.svg": "/4p22-final-project-ruslan-nurgaleev/static/media/Like.1fdfe75c934ebc265852dd4800a5761b.svg",
     "static/media/Entry.svg": "/4p22-final-project-ruslan-nurgaleev/static/media/Entry.cf9c2a83db32d1ec5769a25da3c5e42f.svg",
-    "main.57476e19.css.map": "/4p22-final-project-ruslan-nurgaleev/static/css/main.57476e19.css.map",
-    "main.62521e9c.js.map": "/4p22-final-project-ruslan-nurgaleev/static/js/main.62521e9c.js.map"
+    "main.31902429.css.map": "/4p22-final-project-ruslan-nurgaleev/static/css/main.31902429.css.map",
+    "main.503c28ed.js.map": "/4p22-final-project-ruslan-nurgaleev/static/js/main.503c28ed.js.map"
   },
   "entrypoints": [
-    "static/css/main.57476e19.css",
-    "static/js/main.62521e9c.js"
+    "static/css/main.31902429.css",
+    "static/js/main.503c28ed.js"
   ]
 }
