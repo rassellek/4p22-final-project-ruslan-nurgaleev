@@ -75,6 +75,93 @@
         line-height: calc(24 * $ratio-big);
       }
     }
+
+    .info {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      caret-color: transparent;
+      font-family: 'Comfortaa';
+      font-weight: 400;
+      line-height: calc(44 * $ratio-big);
+      margin-left: calc(50 * $ratio-big);
+
+      .containerInfo {
+        display: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 100%;
+        margin: calc(25 * $ratio-big);
+        padding: calc(50 * $ratio-big);
+        box-shadow: calc(0 * $ratio-big) calc(5 * $ratio-big) calc(45 * $ratio-big)
+          rgba(0, 0, 0, 0.25);
+        border-radius: calc(25 * $ratio-big);
+        .title {
+          font-weight: 700;
+          font-size: calc(44 * $ratio-big);
+          margin-bottom: calc(25 * $ratio-big);
+        }
+        .description {
+          font-size: calc(24 * $ratio-big);
+          margin-bottom: calc(25 * $ratio-big);
+        }
+        .button {
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          border: none;
+          background: none;
+          border: 2px solid $color-header-info;
+          border-radius: 1%;
+          width: 40%;
+          height: calc(50 * $ratio-big);
+          margin-left: 55%;
+          color: $color-white;
+          padding: 0;
+          --myColor1: #ffffff;
+          background-color: $color-header-navbar-hover;
+          font-size: calc(24 * $ratio-big);
+        }
+        .button:active {
+          border-color: $color-header-info;
+          color: $color-header-info;
+          background-color: $color-white;
+        }
+        .button:hover {
+          border-color: $color-header-info;
+          color: $color-header-info;
+          background-color: $color-white;
+        }
+      }
+
+      .containerImage {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        height: 100%;
+        margin: calc(25 * $ratio-big);
+        .leftImage {
+          position: absolute;
+          top: 50%;
+          left: -10%;
+          width: 40%;
+        }
+        .centerImage {
+          width: 70%;
+        }
+        .rightImage {
+          position: absolute;
+          top: 10%;
+          right: -10%;
+          width: 50%;
+        }
+      }
+    }
   }
 }
 
@@ -148,6 +235,92 @@
         font-weight: 400;
         font-size: calc(14 * $ratio-small);
         line-height: calc(14 * $ratio-small);
+      }
+    }
+    .info {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      caret-color: transparent;
+      font-family: 'Comfortaa';
+      font-weight: 400;
+      line-height: calc(24 * $ratio-small);
+      margin-left: calc(25 * $ratio-small);
+
+      .containerInfo {
+        display: column;
+        align-items: center;
+        justify-content: center;
+        width: 50%;
+        height: 100%;
+        margin: calc(25 * $ratio-small);
+        padding: calc(25 * $ratio-small);
+        box-shadow: calc(0 * $ratio-small) calc(5 * $ratio-small) calc(45 * $ratio-small)
+          rgba(0, 0, 0, 0.25);
+        border-radius: calc(25 * $ratio-small);
+        .title {
+          font-weight: 700;
+          font-size: calc(24 * $ratio-small);
+          margin-bottom: calc(25 * $ratio-small);
+        }
+        .description {
+          font-size: calc(16 * $ratio-small);
+          margin-bottom: calc(25 * $ratio-small);
+        }
+        .button {
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          border: none;
+          background: none;
+          border: 2px solid $color-header-info;
+          border-radius: 1%;
+          width: 40%;
+          height: calc(50 * $ratio-small);
+          margin-left: 55%;
+          color: $color-white;
+          padding: 0;
+          --myColor1: #ffffff;
+          background-color: $color-header-navbar-hover;
+          font-size: calc(16 * $ratio-small);
+        }
+        .button:active {
+          border-color: $color-header-info;
+          color: $color-header-info;
+          background-color: $color-white;
+        }
+        .button:hover {
+          border-color: $color-header-info;
+          color: $color-header-info;
+          background-color: $color-white;
+        }
+      }
+
+      .containerImage {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        height: 100%;
+        margin: calc(25 * $ratio-small);
+        .leftImage {
+          position: absolute;
+          top: 50%;
+          left: -10%;
+          width: 40%;
+        }
+        .centerImage {
+          width: 90%;
+        }
+        .rightImage {
+          position: absolute;
+          top: 10%;
+          right: -10%;
+          width: 50%;
+        }
       }
     }
   }

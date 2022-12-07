@@ -8,7 +8,7 @@ import { setIsLoading } from 'modules/main/store/mainSlice'
 import api from '../../config/api'
 
 import s from './Product.module.scss'
-import { HouseIcon, CartIcon, LikeIcon, PlusBlackIcon, MinusBlackIcon } from 'assets/icons'
+import { HouseIcon, CartIcon, PlusBlackIcon, MinusBlackIcon } from 'assets/icons'
 
 const Product = () => {
   const [productInfo, setProductInfo] = useState(null)

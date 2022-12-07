@@ -6,7 +6,6 @@ import { ProductItem } from './components'
 import { MainLayout } from '../../../../shared'
 
 import { SearchIcon, CrossIcon, CategoryIcon } from '../../../../assets/icons'
-import mainImage from '../../../../assets/images/Main_1.png'
 import s from './Main.module.scss'
 import { setIsLoading, setProducts } from 'modules/main/store/mainSlice'
 
@@ -155,6 +154,7 @@ const Main = () => {
             <SearchIcon className={s.searchIcon} />
           </button>
         </div>
+        
         <div className={s.heading} id={'catalog'}>
           <h1>Новые поступления</h1>
           <div className={s.line}></div>

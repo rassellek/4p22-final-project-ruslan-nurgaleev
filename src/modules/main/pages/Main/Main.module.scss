@@ -293,7 +293,7 @@
       align-items: center;
       font-family: 'PT Sans', sans-serif;
       font-weight: 400;
-      font-size: calc(10 * $ratio-small);
+      font-size: calc(18 * $ratio-small);
       line-height: calc(18 * $ratio-small);
       caret-color: transparent;
       background-color: $color-header-navbar;
@@ -334,7 +334,7 @@
         width: 10%;
         min-width: 25px;
         padding: 0;
-        left: 30%;
+        left: 33%;
         --myColor1: #969696;
 
         .s.crossIcon {
@@ -355,7 +355,7 @@
         position: absolute;
         display: none;
         height: calc(40 * $ratio-small);
-        width: 20%;
+        width: 25%;
         left: 10%;
         background-color: $color-header-navbar-hover;
         border: 2px solid $color-header-info;
@@ -403,11 +403,11 @@
       .input:hover {
         background-color: $color-white;
         color: $color-black;
-        opacity: 50%;
+        opacity: 45%;
         transition: 0.2s;
       }
       .input:focus {
-        width: 50%;
+        width: 45%;
         background-color: $color-white;
         color: $color-black;
         transition: 0.2s;
@@ -420,12 +420,12 @@
         width: 10%;
         min-width: 25px;
         padding: 0;
-        right: 10%;
+        right: 11%;
         --myColor1: #969696;
 
         .s.crossIcon {
-          width: calc(25 * $ratio-small);
-          height: calc(25 * $ratio-small);
+          width: calc(15 * $ratio-small);
+          height: calc(15 * $ratio-small);
         }
       }
 

@@ -376,6 +376,7 @@
       display: flex;
       align-items: center;
       justify-content: left;
+      margin-left: calc(15 * $ratio-small);
       width: 90%;
 
       .clear {
