@@ -1,4 +1,4 @@
-import React, {  useState } from 'react'
+import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 
@@ -150,7 +150,7 @@ const Cart = () => {
               <p>К сожалению, корзина пуста.</p>
               <p>Вы можете перейти на главную страницу или воспользоваться каталогом товаров.</p>
               <p>
-                <button className={s.buttonNavigate} onClick={() => navigate('/')}>
+                <button className={s.buttonNavigate} onClick={() => navigate('/home')}>
                   &gt; Вернуться на главную страницу.
                 </button>
               </p>
